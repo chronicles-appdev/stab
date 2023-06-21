@@ -1,0 +1,97 @@
+.benefits-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-heading h2 {
+  width: 267px;
+  height: 42px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 178%;
+  color: #333333;
+}
+
+.benefits-marker {
+  position: absolute;
+  right: 39%;
+}
+
+.benefits-heading p {
+  width: 717px;
+  height: 72px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 178%;
+  text-align: center;
+  color: #333333;
+  margin-top: 16px;
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+  justify-content: center;
+  height: 848px;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.benefits-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  height: 664px;
+  width: 510px;
+}
+
+.benefits-right li {
+  width: 332px;
+  height: 39px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 178%;
+  text-align: left;
+  color: #000000;
+  background-image: url("/bullet.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  list-style: none;
+  padding-left: 45px;
+}
+
+.benefits-button {
+  width: 400px;
+  height: 64px;
+  background: #0961bf;
+  border-radius: 10px;
+  border: none;
+  margin-top: 45px;
+  margin-left: 35px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,45 @@
+.hero-wrapper {
+  width: 100%;
+}
+
+.hero-shape {
+  background-color: #192a5f;
+  height: 614px;
+  width: 100%;
+  clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
+}
+
+.hero-shape h1 {
+  margin: 0;
+  color: #fbfbfb;
+  width: 667px;
+  height: 110px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 157%;
+  letter-spacing: -0.04em;
+  padding-top: 117px;
+  padding-left: 80px;
+}
+
+.hero-shape p {
+  width: 667px;
+  height: 26px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 120%;
+  color: #fbfbfb;
+  padding-top: 250px;
+  padding-left: 80px;
+}
+
+.hero-image {
+  position: absolute;
+  top: 13%;
+  right: 0;
+  z-index: -1;
+}
