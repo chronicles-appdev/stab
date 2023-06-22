@@ -1,9 +1,22 @@
 import "./ContactUs.css";
 import ContactForm from "./ContactForm";
+import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="contact-container">
+    <motion.div
+      id="contact"
+      className="contact-container"
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{
+        type: "spring",
+        duration: 3,
+        delay: 1,
+        stiffness: 260,
+      }}
+      viewport={{ once: true }}
+    >
       <div className="contact-heading">
         <h2>Let’s talk about everything</h2>
         <p>
@@ -12,7 +25,7 @@ const ContactUs = () => {
         </p>
       </div>
       <ContactForm />
-    </div>
+    </motion.div>
   );
 };
 

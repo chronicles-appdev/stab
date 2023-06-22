@@ -1,5 +1,6 @@
 import "./FAQ.css";
 import { useState } from "react";
+import { motion } from "framer-motion";
 const FAQ = () => {
   const [selected, setSelected] = useState("btn1");
   const [FAQ_answer_heading, setFAQ_answer_heading] = useState(
@@ -17,7 +18,19 @@ const FAQ = () => {
     setSelected("btn1");
   };
   return (
-    <div id="FAQ" className="faq-container">
+    <motion.div
+      id="FAQ"
+      className="faq-container"
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{
+        type: "spring",
+        duration: 3,
+        delay: 1,
+        stiffness: 260,
+      }}
+      viewport={{ once: true }}
+    >
       <div className="faq-heading">
         <h2>
           Frequently Asked Questions <div className="faq-marker"></div>
@@ -144,7 +157,7 @@ const FAQ = () => {
           <p>{FAQ_answer_paragraph}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
