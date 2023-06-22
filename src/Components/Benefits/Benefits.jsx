@@ -1,8 +1,20 @@
 import "./Benefits.css";
+import { motion } from "framer-motion";
 
 const Benefits = () => {
   return (
-    <div className="benefits-wrapper">
+    <motion.div
+      className="benefits-wrapper"
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{
+        type: "spring",
+        duration: 3,
+        delay: 1,
+        stiffness: 260,
+      }}
+      viewport={{ once: true }}
+    >
       <div className="benefits-heading">
         <h2>
           Perks and Benefits <div className="marker benefits-marker"></div>
@@ -32,7 +44,7 @@ const Benefits = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

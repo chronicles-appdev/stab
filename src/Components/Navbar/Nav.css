@@ -39,12 +39,37 @@
   color: #333333;
 }
 
-.nav-button {
+/* .nav-button {
   background-color: #0961bf;
   width: 192px;
   height: 46.08px;
   border-radius: 20px;
+} */
+
+/* .nav-button:hover {
+  background-color: #0d7ed0;
+} */
+
+.nav-btn {
+  background-color: #0961bf;
+  width: 192px;
+  height: 46.08px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.36px;
+  line-height: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.1s;
 }
+
+/* .nav-button:hover {
+  background-color: transparent;
+} */
 
 Link {
   text-decoration: none;
@@ -56,15 +81,23 @@ Link {
   color: #333333;
 }
 
-.nav-btn {
-  background: none;
-  border: none;
-  width: 192px;
-  height: 46.08px;
-  color: white;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15.36px;
-  line-height: 22px;
+/* .nav-btn::before {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: 170px;
+  width: 100%;
+  height: 100%;
+  background: #0d7ed0;
+
+  z-index: -1;
+  border-radius: 20px 0 0 20px;
+  transition: 0.1s;
 }
+
+.nav-btn:hover::before {
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #0d7ed0;
+} */

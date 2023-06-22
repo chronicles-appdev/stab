@@ -4,6 +4,7 @@ import Footer from "../Components/Footer/Footer";
 import Nav from "../Components/Navbar/Nav";
 import Modal_Page from "../Components/Modal/Modal_Page";
 import ProductsData from "./product.json";
+import { motion } from "framer-motion";
 
 const Product = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -20,18 +21,47 @@ const Product = () => {
 
         <div className="product-wrapper">
           <div className="product-shape">
-            <h1>
+            <motion.h1
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{
+                type: "spring",
+                duration: 3,
+                delay: 0.5,
+                stiffness: 260,
+              }}
+            >
               Invest in a Brighter{" "}
               <span style={{ color: "#007BFF" }}> FUTURE</span>
-            </h1>
-            <button className="product-button">
+            </motion.h1>
+            <motion.button
+              className="product-button"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{
+                type: "spring",
+                duration: 3,
+                delay: 0.5,
+                stiffness: 260,
+              }}
+            >
               Explore <img src="/Send.png" />
-            </button>
+            </motion.button>
           </div>
 
-          <div className="product-image">
+          <motion.div
+            className="product-image"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+              type: "spring",
+              duration: 3,
+              delay: 0.5,
+              stiffness: 260,
+            }}
+          >
             <img src="/Tablet.png" alt="hero-image" />
-          </div>
+          </motion.div>
         </div>
 
         <div className="product-container">

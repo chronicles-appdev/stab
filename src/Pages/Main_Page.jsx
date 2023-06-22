@@ -7,13 +7,16 @@ import Footer from "../Components/Footer/Footer";
 import Hero from "../Components/Hero/Hero";
 import Nav from "../Components/Navbar/Nav";
 import Product_Review from "../Components/Product_Review/Product_Review";
+import { AnimatePresence } from "framer-motion";
 const Main_Page = () => {
   return (
     <div style={{ width: "100%" }}>
       <Nav />
       <Hero />
       <Features />
-      <About />
+      <AnimatePresence mode={"wait"}>
+        <About />
+      </AnimatePresence>
       <Benefits />
       <Product_Review />
       <FAQ />
